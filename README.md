@@ -1,10 +1,10 @@
 # Temporal Modeling and Counterfactual Policy Simulation of Student Dropout
 
-Notebook principal do projeto que dá suporte ao paper **“A Mathematical Framework for Temporal Modeling and Counterfactual Policy Simulation of Student Dropout”**. O pipeline transforma dados temporais de engajamento acadêmico em uma base semanal no formato *person-period*, treina um modelo de risco temporal, reconstrói trajetórias de sobrevivência e executa simulações contrafactuais de política para comparar cenários de intervenção. fileciteturn1file0
+Notebook principal do projeto que dá suporte ao paper **“A Mathematical Framework for Temporal Modeling and Counterfactual Policy Simulation of Student Dropout”**. O pipeline transforma dados temporais de engajamento acadêmico em uma base semanal no formato *person-period*, treina um modelo de risco temporal, reconstrói trajetórias de sobrevivência e executa simulações contrafactuais de política para comparar cenários de intervenção. 
 
 ## Objetivo
 
-Este repositório foi organizado para reproduzir, auditar e estender o experimento central do paper. O foco não é apenas prever **quem** tem maior risco de evasão, mas também **quando** o risco aumenta ao longo do tempo acadêmico e como regras explícitas de intervenção alteram, em simulação, as trajetórias de sobrevivência estimadas pelo modelo. fileciteturn1file1
+Este repositório foi organizado para reproduzir, auditar e estender o experimento central do paper. O foco não é apenas prever **quem** tem maior risco de evasão, mas também **quando** o risco aumenta ao longo do tempo acadêmico e como regras explícitas de intervenção alteram, em simulação, as trajetórias de sobrevivência estimadas pelo modelo. 
 
 ## O que este notebook faz
 
@@ -19,7 +19,7 @@ O notebook implementa um fluxo fim a fim que cobre:
 7. treino do modelo principal de **discrete-time hazard** com regressão logística penalizada e calibração sigmoidal;
 8. reconstrução das curvas de sobrevivência previstas;
 9. simulação de políticas contrafactuais nas versões **shock** e **mechanism-aware**;
-10. análise por subgrupos com *bootstrap* para medir mudança de gap entre grupos observáveis. fileciteturn1file2 fileciteturn1file3
+10. análise por subgrupos com *bootstrap* para medir mudança de gap entre grupos observáveis. 
 
 ## Perguntas de pesquisa cobertas
 
@@ -27,7 +27,7 @@ O notebook foi estruturado para responder três perguntas centrais:
 
 - **RQ1 — Qualidade do hazard temporal:** o modelo semanal discrimina e calibra bem o suficiente para sustentar decisões downstream?
 - **RQ2 — Contraste estrutural entre regimes:** uma regra determinística baseada em recência produz contraste interpretável de sobrevivência sob diferentes cenários simulados?
-- **RQ3 — Mudança de gap entre subgrupos:** a mesma política altera o gap entre grupos observáveis com direção estável sob incerteza por *bootstrap*? fileciteturn1file1 fileciteturn1file2
+- **RQ3 — Mudança de gap entre subgrupos:** a mesma política altera o gap entre grupos observáveis com direção estável sob incerteza por *bootstrap*? 
 
 ## Resumo metodológico
 
@@ -39,22 +39,22 @@ A unidade analítica é o **enrollment**, identificado pelo triplo:
 (id_student, code_module, code_presentation)
 ```
 
-Após deduplicação, o paper reporta **32.593 enrollments** e **28.785 estudantes únicos**. O evento principal exige `final_result = Withdrawn` e `date_unregistration` válido; casos Withdrawn sem data válida são tratados como censurados sob a definição principal do endpoint. fileciteturn1file2
+Após deduplicação, o paper reporta **32.593 enrollments** e **28.785 estudantes únicos**. O evento principal exige `final_result = Withdrawn` e `date_unregistration` válido; casos Withdrawn sem data válida são tratados como censurados sob a definição principal do endpoint. 
 
 ### 2) Representação temporal
 
-Cada enrollment é expandido em semanas, formando uma tabela **person-period** com uma linha por enrollment-semana. Isso permite modelar o risco como um processo temporal, em vez de uma classificação estática de fim de curso. fileciteturn1file1
+Cada enrollment é expandido em semanas, formando uma tabela **person-period** com uma linha por enrollment-semana. Isso permite modelar o risco como um processo temporal, em vez de uma classificação estática de fim de curso. 
 
 ### 3) Modelo principal
 
-O backbone do trabalho é um modelo de **discrete-time hazard** ajustado sobre linhas semanais, com regressão logística balanceada e calibração posterior. A partir do hazard semanal previsto, o notebook reconstrói a sobrevivência por produto cumulativo. fileciteturn1file0 fileciteturn1file3
+O backbone do trabalho é um modelo de **discrete-time hazard** ajustado sobre linhas semanais, com regressão logística balanceada e calibração posterior. A partir do hazard semanal previsto, o notebook reconstrói a sobrevivência por produto cumulativo. 
 
 ### 4) Política contrafactual
 
 O notebook compara dois tipos de regime simulado:
 
 - **Shock:** reduz diretamente o hazard dentro da janela ativa.
-- **Mechanism-aware:** altera covariáveis contrafactuais e recalcula o risco de forma stateful. fileciteturn1file1 fileciteturn1file3
+- **Mechanism-aware:** altera covariáveis contrafactuais e recalcula o risco de forma stateful. 
 
 ### 5) Horizonte de avaliação
 
@@ -62,7 +62,7 @@ O protocolo separa três horizontes:
 
 - `Tpolicy = 18`: horizonte substantivo principal;
 - `Teval_policy = 38`: suporte bruto de trajetória para política;
-- `Teval_metrics = 37`: horizonte estável para métricas ponderadas por IPCW. fileciteturn1file4
+- `Teval_metrics = 37`: horizonte estável para métricas ponderadas por IPCW.
 
 ## Estrutura esperada do repositório
 
@@ -92,9 +92,9 @@ Além do notebook, o projeto exporta artefatos em `outputs_v2` para dar rastreab
 - `table_policy_deltaS_at_horizons_by_scenario.csv`
 - `table_policy_horizons_dual.csv`
 - `table_policy_mech_operator_spec.csv`
-- `table_rq2_sensitivity_grid.csv` fileciteturn1file4
+- `table_rq2_sensitivity_grid.csv` 
 
-Esses artefatos documentam o contrato de política, os cenários, os horizontes de avaliação e os resultados exportados da simulação. fileciteturn1file4
+Esses artefatos documentam o contrato de política, os cenários, os horizontes de avaliação e os resultados exportados da simulação. 
 
 ## Como executar
 
@@ -109,7 +109,7 @@ pip install -r requirements.txt
 
 ### 2) Obter os dados
 
-Baixe e organize as tabelas do **OULAD** na pasta de dados definida no notebook. O paper utiliza as tabelas de interação no VLE, avaliações e registros administrativos para montar a base temporal. fileciteturn1file2
+Baixe e organize as tabelas do **OULAD** na pasta de dados definida no notebook. O paper utiliza as tabelas de interação no VLE, avaliações e registros administrativos para montar a base temporal. 
 
 ### 3) Executar o notebook
 
@@ -131,11 +131,11 @@ Ao final da execução, o notebook deve produzir:
 - curvas de `ΔS(t)` por cenário de política;
 - diagnósticos de censoring;
 - comparação com benchmarks e análises de robustez;
-- análise de subgrupos com intervalos via *bootstrap*. fileciteturn1file3
+- análise de subgrupos com intervalos via *bootstrap*. 
 
 ## Escopo interpretativo
 
-Os resultados de política e fairness **não** devem ser lidos como efeitos causais identificados. O próprio paper delimita que `ΔS` e `ΔGap` são **contrastes estruturais simulados**, dependentes do modelo ajustado e do contrato explícito da política, não estimativas causais observacionais. fileciteturn1file4
+Os resultados de política e fairness **não** devem ser lidos como efeitos causais identificados. O próprio paper delimita que `ΔS` e `ΔGap` são **contrastes estruturais simulados**, dependentes do modelo ajustado e do contrato explícito da política, não estimativas causais observacionais.
 
 ## Reprodutibilidade
 
@@ -146,7 +146,7 @@ Este repositório existe para servir como trilha executável do paper. O manuscr
 - treino e calibração;
 - simulação de política;
 - análise de subgrupos;
-- exportação dos artefatos em `outputs_v2`. fileciteturn1file4
+- exportação dos artefatos em `outputs_v2`. 
 
 Para manter a reprodutibilidade:
 
