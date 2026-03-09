@@ -1,0 +1,2 @@
+effect_params_source,channel_mode,W_weeks,alpha_week0,alpha_week1,decay_type,window_exclusive_upper,trigger_rule,trigger_unit,recency_update_rule,streak_update_rule
+anchored_defaults + policy_params.shock_scenarios,clicks_plus_stateful_recency_streak,2,0.35,0.1,kb2023_step_2w,1,recency>=r_star,weeks,stateful_from_activity_cf,stateful_from_activity_cf

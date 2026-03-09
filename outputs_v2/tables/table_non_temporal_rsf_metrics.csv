@@ -1,0 +1,13 @@
+metric,value
+model_name,rf_classifier_fallback
+implementation,sklearn_fallback_no_sksurv (ModuleNotFoundError)
+T_policy,18.0
+T_eval_metrics,30.0
+n_train_enrollments,22815.0
+n_test_enrollments,9778.0
+n_features_numeric,2.0
+n_features_categorical,8.0
+AUC_event_by_T_policy,0.6456593498657632
+AUC_event_by_T_eval_metrics,0.6382801400159082
+Brier_event_by_T_policy,0.20911221952991751
+Brier_event_by_T_eval,0.21278908854387701

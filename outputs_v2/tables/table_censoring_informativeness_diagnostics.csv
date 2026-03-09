@@ -1,0 +1,4 @@
+model_variant,num_features,cat_features,auc_censoring_train,auc_censoring_test
+baseline_no_engagement,2,6,0.8911027826543668,0.8938315759409348
+full_with_engagement,6,6,0.9290770449763809,0.9298856103752213
+delta_full_minus_baseline,4,0,0.03797426232201406,0.036054034434286564

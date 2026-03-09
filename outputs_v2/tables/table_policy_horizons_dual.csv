@@ -1,0 +1,4 @@
+horizon_label,week,G_t,n_at_risk_week,role
+T_policy,18,0.7957980376262404,21255.0,policy_trigger_and_contrast
+T_eval_policy,38,1e-12,1575.0,trajectory_reporting_and_deltaS_tables
+T_eval_metrics,37,0.06007189286008718,3782.0,stable_IPCW_metrics_only

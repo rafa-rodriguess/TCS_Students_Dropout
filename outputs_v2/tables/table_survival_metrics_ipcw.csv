@@ -1,0 +1,16 @@
+metric,value
+T_policy,18.0
+T_eval_metrics,37.0
+T_eval_policy,38.0
+T_max_G_table,38.0
+G_T_policy,0.7957980376262404
+G_T_eval_metrics,0.0600718928600871
+G_T_eval_policy,1e-12
+C_index_discrete_T_policy,0.5045023800938964
+C_index_discrete_T_eval_metrics,0.40812438729356193
+IPCW_Brier_T_policy,0.17455999213889598
+IPCW_IBS_0_T_policy,0.11528123383744171
+IPCW_Brier_T_eval_metrics,0.11495563308716626
+IPCW_IBS_0_T_eval_metrics,0.15406036902689152
+N_test_enrollments,9778.0
+N_test_events,2216.0

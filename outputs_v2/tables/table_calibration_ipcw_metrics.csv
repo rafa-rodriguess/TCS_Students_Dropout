@@ -1,0 +1,9 @@
+metric,value
+AUC_train,0.8354830684290305
+AUC_test,0.8394664715157028
+Brier_test,0.00920799703080096
+ECE_test,0.0009308954558307907
+n_bins,15.0
+cv_type,GroupKFold(enrollment) OOF + Platt
+platt_a_ipcw,0.9624038615400873
+platt_b_ipcw,-0.16132664730068075

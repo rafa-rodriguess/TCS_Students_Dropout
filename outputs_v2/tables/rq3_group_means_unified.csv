@@ -1,0 +1,5 @@
+horizon,group,mean_S_base,mean_S_policy,horizon_explicit
+T_policy,F,0.8646202647558378,0.868919101251955,T_policy
+T_policy,M,0.8542253827801225,0.8590323746787799,T_policy
+T_eval,F,0.8283160991005738,0.8325578299747297,T_eval_metrics
+T_eval,M,0.8155151796698635,0.8203238224371645,T_eval_metrics

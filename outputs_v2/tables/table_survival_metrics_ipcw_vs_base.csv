@@ -1,0 +1,5 @@
+metric,base_hazard_hat,ipcw_hazard_hat_ipcw
+T_eval_metrics,37.0,37.0
+G_T_eval_metrics,0.0600718928600871,0.0600718928600871
+C_index_discrete_T_eval,0.40812438729356193,0.45270021981227926
+IPCW_Brier_T_eval,0.06074542081488571,0.06238913002015243

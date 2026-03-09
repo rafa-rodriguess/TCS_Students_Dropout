@@ -1,0 +1,4 @@
+scenario_id,scenario_label,delta_shock_ablation,scenario_status,scenario_source,scenario_note
+anchored_conservative,Conservative anchored,0.08,anchored,SneyersDeWitte2018_anchored,Conservative anchored intensity
+hypothetical_A,Hypothetical A,0.2,hypothetical,hypothetical_legacy_baseline,"Legacy notebook baseline, now treated as hypothetical"
+hypothetical_B,Hypothetical B,0.6,hypothetical,hypothetical_extreme_stress_test,Extreme stress-test intensity

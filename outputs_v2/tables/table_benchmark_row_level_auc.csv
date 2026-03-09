@@ -1,0 +1,3 @@
+model,family,AUC_row_test,source
+discrete_time_logit,row_level_temporal,0.8404845466472504,pp_test.hazard_hat
+discrete_time_logit_ipcw,row_level_temporal,0.8394664715157028,pp_test.hazard_hat_ipcw

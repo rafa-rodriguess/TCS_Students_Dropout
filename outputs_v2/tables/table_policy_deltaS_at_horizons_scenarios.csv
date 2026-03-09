@@ -1,0 +1,7 @@
+scenario_id,scenario_label,scenario_status,scenario_source,delta_shock_ablation,horizon_label,week,S0_bar,S_shock_bar,S_mech_bar,deltaS_shock,deltaS_mech,deltaDeltaS_mech_minus_shock
+anchored_conservative,Conservative anchored,anchored,SneyersDeWitte2018_anchored,0.08,T_policy,18,0.855433213063115,0.8656690873090478,0.847666980252864,0.010235874245932752,-0.007766232810251017,-0.01800210705618377
+anchored_conservative,Conservative anchored,anchored,SneyersDeWitte2018_anchored,0.08,T_eval_policy,38,0.8677048145010401,0.8772939263416019,0.8543527357982522,0.00958911184056177,-0.013352078702787873,-0.022941190543349643
+hypothetical_A,Hypothetical A,hypothetical,hypothetical_legacy_baseline,0.2,T_policy,18,0.855433213063115,0.881393352550635,0.847666980252864,0.025960139487519962,-0.007766232810251017,-0.03372637229777098
+hypothetical_A,Hypothetical A,hypothetical,hypothetical_legacy_baseline,0.2,T_eval_policy,38,0.8677048145010401,0.8919782845934621,0.8543527357982522,0.024273470092421978,-0.013352078702787873,-0.03762554879520985
+hypothetical_B,Hypothetical B,hypothetical,hypothetical_extreme_stress_test,0.6,T_policy,18,0.855433213063115,0.9373787545791411,0.847666980252864,0.08194554151602607,-0.007766232810251017,-0.08971177432627708
+hypothetical_B,Hypothetical B,hypothetical,hypothetical_extreme_stress_test,0.6,T_eval_policy,38,0.8677048145010401,0.9436803928924262,0.8543527357982522,0.07597557839138613,-0.013352078702787873,-0.089327657094174

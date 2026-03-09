@@ -1,0 +1,7 @@
+metric,primary_withdrawn,composite_fail_or_withdrawn
+T_policy,18.0,18.0
+T_eval,37.0,37.0
+C_index_discrete_T_eval,0.49652885070135816,0.496455103901985
+IPCW_Brier_T_eval,0.8542252729819645,1.079948733072568
+IPCW_IBS_0_T_eval,0.24294959464150084,0.3290678608467852
+N_events,2216.0,4308.0

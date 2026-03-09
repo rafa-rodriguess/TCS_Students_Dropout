@@ -1,0 +1,2 @@
+rows_total,rows_active,rows_changed_any,rows_changed_nonactive,frac_changed_any,frac_changed_nonactive,frac_changed_clicks,frac_changed_recency,frac_changed_streak,hazard_delta_mech_mean,hazard_delta_mech_p95,hazard_delta_shock_mean,hazard_delta_shock_p95
+232417,15190,4816,0,0.020721375802974826,0.0,0.020721375802974826,0.0,0.0,0.00020746843777003912,0.0026483492039699255,-0.0017190289687505393,-0.00028116224884865636

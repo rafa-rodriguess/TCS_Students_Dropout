@@ -1,0 +1,10 @@
+metric,value
+AUC_train,0.8358500884891436
+AUC_test,0.8395774755908261
+Brier_test,0.009323056385034438
+ECE_test,0.001220699192687835
+n_bins,15.0
+calibration_cv_splits,5.0
+calibration_cv_type,GroupKFold(enrollment) via precomputed splits
+n_features_numeric,6.0
+n_features_categorical,6.0

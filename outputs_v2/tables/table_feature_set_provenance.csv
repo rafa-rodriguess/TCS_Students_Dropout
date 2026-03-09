@@ -1,0 +1,17 @@
+key,value
+feature_hash_short_sha256,ab2fa95b2af7551c
+n_numeric_features,6
+n_categorical_features,6
+includes_submitted_this_week,1
+T_policy,18
+T_eval_policy,38
+grid_size,216
+deltaS_mech_Tpolicy_q25,0.0021384789186444
+deltaS_mech_Tpolicy_median,0.0028799264617344004
+deltaS_mech_Tpolicy_q75,0.00348298828743315
+grid_top1_r_star,2
+grid_top1_W,3
+grid_top1_decay_type,flat
+grid_top1_alpha_week0,0.5
+grid_top1_alpha_week1,0.15
+grid_top1_deltaS_mech_Tpolicy,0.0047248581834257

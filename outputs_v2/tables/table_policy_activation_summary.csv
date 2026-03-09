@@ -1,0 +1,2 @@
+effect_params_source,channel_mode,W,alpha_week0,alpha_week1,decay_type,window_exclusive_upper,delta_shock_ablation,reference_scenario_id,scenario_count,n_enrollments_total,n_enrollments_triggered,trigger_rate_enrollment,n_rows_total,n_rows_active,active_rate_rows
+anchored_defaults + policy_params.shock_scenarios,clicks_plus_stateful_recency_streak,2,0.35,0.1,kb2023_step_2w,1,0.2,hypothetical_A,3,9778,8387,0.8577418695029658,232417,15190,0.0653566649599642

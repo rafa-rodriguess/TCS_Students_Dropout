@@ -1,0 +1,9 @@
+metric,value
+n_bins_quantile_raw,12.0
+min_n_bin,80.0
+min_positives,5.0
+min_negatives,5.0
+n_bins_after_tail_merge,12.0
+n_bins_reportable,12.0
+n_bins_insufficient_support,0.0
+ECE_test_reportable_bins,0.0018487598891611234

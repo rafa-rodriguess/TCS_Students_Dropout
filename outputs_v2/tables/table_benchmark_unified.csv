@@ -1,0 +1,6 @@
+model,family,model_impl,AUC_event_by_T_policy,AUC_event_by_T_eval_metrics,AUC_IPCW_event_by_T_policy,AUC_IPCW_event_by_T_eval_metrics,n_test_enrollments,n_effective_weight_policy,n_effective_weight_eval_metrics,source
+temporal_hazard_active,discrete_time,pp_test.hazard_hat,0.48027038264275707,0.49792261826900036,0.43095748170417214,0.5308732641969156,9778.0,9847.113012849406,21214.29686515931,pp_test.hazard_hat
+temporal_hazard_ipcw,discrete_time_ipcw,pp_test.hazard_hat_ipcw,0.5220236385027273,0.5290683956071446,0.48648452268544035,0.5895517555411086,9778.0,9847.113012849406,21214.29686515931,pp_test.hazard_hat_ipcw
+non_temporal_rsf,non_temporal_survival,unknown,0.6456593498657632,0.6388364609480998,0.6599417072489087,0.6344587928870382,9778.0,9847.113012849406,21214.29686515931,pred_df(in_memory)
+discrete_time_logit,row_level_temporal,,,,,,,,,pp_test.hazard_hat
+discrete_time_logit_ipcw,row_level_temporal,,,,,,,,,pp_test.hazard_hat_ipcw

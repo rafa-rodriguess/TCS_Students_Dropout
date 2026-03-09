@@ -1,0 +1,2 @@
+gate_name,gate_mode,gate_pass,gate_reason,rows_total,rows_active,rows_changed_total_clicks,rows_changed_recency,rows_changed_streak,rows_changed_nonactive,frac_changed_clicks,frac_changed_recency,frac_changed_streak,click_only_effective
+mechanism_aware_state_propagation,warn,0,fail: no recency/streak propagation observed (effective clicks-dominant mechanism),232417,15190,4816,0,0,0,0.0207213758029748,0.0,0.0,1

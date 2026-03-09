@@ -1,0 +1,3 @@
+metric,base,ipcw,delta_abs,delta_rel,direction,better_when,improves_bool
+C_index_discrete_T_eval,0.4081243872935619,0.4527002198122792,0.0445758325187173,0.1092211931130058,improves,higher,1.0
+IPCW_Brier_T_eval,0.0607454208148857,0.0623891300201524,0.0016437092052666,0.0270589812897288,worsens,lower,0.0

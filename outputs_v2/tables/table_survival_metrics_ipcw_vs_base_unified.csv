@@ -1,0 +1,11 @@
+metric,base_hazard_hat,ipcw_hazard_hat_ipcw
+T_policy,18.0,18.0
+T_eval_policy,38.0,38.0
+G_T_policy,0.7957980376262404,0.7957980376262404
+G_T_eval_policy,1e-12,1e-12
+N_test_enrollments,9778.0,9778.0
+N_test_events,2216.0,2216.0
+T_eval_metrics,37.0,37.0
+G_T_eval_metrics,0.0600718928600871,0.0600718928600871
+C_index_discrete_T_eval,0.4081243872935619,0.4527002198122792
+IPCW_Brier_T_eval,0.0607454208148857,0.0623891300201524

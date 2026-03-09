@@ -1,0 +1,3 @@
+model,split,auc
+discrete_time_logit,train,0.8350153849193052
+discrete_time_logit,test,0.8404845466472504

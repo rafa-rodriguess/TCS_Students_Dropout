@@ -1,0 +1,2 @@
+model,auc_train_row,auc_test_row,n_numeric,n_categorical,numeric_cols,categorical_cols,cv_type,n_splits
+HistGB_ordinal_cats_grouped_calibration,0.8548009153605667,0.8362264604357608,3,6,total_clicks|studied_credits|num_of_prev_attempts,week|code_module|code_presentation|highest_education|age_band|gender,GroupKFold(enrollment) precomputed splits,5
